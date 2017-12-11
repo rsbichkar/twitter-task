@@ -1,0 +1,55 @@
+// App.js: Main applcation file. Displays Tweet timeline
+// Todo: Add AppBar, Search and other missing components
+
+import React, { Component } from 'react';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import Paper from 'material-ui/Paper';
+import Grid from 'material-ui/Grid';
+import AppBar from 'material-ui/AppBar';
+import 'typeface-roboto';
+import Typography from 'material-ui/Typography';
+import { withStyles } from 'material-ui/styles';
+
+import Tweets from './Tweets';
+import User from './User';
+
+import tweetArr from './TweetData';
+import userData from './UserData';
+
+const styles = theme => ({
+  root: {
+    flexGrow: 1,
+    marginTop: 30,
+  },
+  paper: {
+    padding: 16,
+    textAlign: 'center',
+    color: theme.palette.text.secondary,
+  },
+});
+
+class App extends Component {
+  render() {
+    return (
+      <div>
+      <AppBar />
+      <MuiThemeProvider>
+        <Grid container justify="center" spacing={16}>
+          <Grid item xs={3}>
+            <Paper className={Paper}>
+              <div><User user={userData} /></div>
+            </Paper>
+          </Grid>
+          <Grid item xs={7}>
+            <Paper className={Paper}>
+              <div><Tweets tweet={tweetArr}/></div>
+            </Paper>
+          </Grid>
+        </Grid>
+      </MuiThemeProvider>
+    </div>
+    );
+  }
+}
+
+export default App;

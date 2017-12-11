@@ -1,0 +1,138 @@
+/*
+ * App.css: css file foe entire application
+ * Todo: Some CSS settings do not show properly. Fix them.
+ */
+
+a:link, a:visited {
+  text-decoration: none;
+}
+
+.AppBarItem {
+  font-family: Arial, 'Helvetica Neue', 'Helvetica', sans-serif;
+  font-weight: bold;
+  padding: 0px 40px 0px 40px;
+}
+
+.User {
+  font-family: Arial, 'Helvetica Neue', 'Helvetica', sans-serif;
+  float: left;
+  border: 1px solid lightblue;
+  margin: 40px 10px 10px 10px;
+}
+
+.UserName {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 15px 0px 0px 0px;
+  vertical-align: center;
+}
+
+.UserTag {
+  color: #888888;
+  padding: 5px 5px 30px 0px;
+}
+
+.BlueBG {
+  background-color: lightblue;
+  padding: 80px 0px 0px 0px;
+}
+
+.UserImage {
+  float: left;
+  width: 100px;
+  border-radius: 50%;
+  margin: 8px;
+  border: 5px solid white;
+}
+
+.UserImageSmall {
+  width: 35px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.UserStatHeading {
+  padding: 40px 20px;
+  color: gray;
+  font-weight: bold;
+}
+
+.UserStatValue {
+  color: lightblue;
+  font-size: 1.25em;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+.TweetCol {
+  margin: 40px 10px 10px 10px;
+}
+
+.Tweet {
+  margin: auto;
+  float: center;
+  font-family: Arial, 'Helvetica Neue', 'Helvetica', sans-serif;
+  background-color: #FCFCFF;
+  border-top: 1px solid lightblue;
+  border-bottom: 1px solid lightblue;
+  margin: 5px 0px 10px 0px;
+  padding: 0px;
+}
+
+.TweetLogoCell {
+  vertical-align: top;
+}
+
+.TweetLogo {
+  width: 75px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.TweetTime {
+  color: #888888;
+}
+
+.ReplyTo {
+  padding: 10px 0px;
+}
+
+.TweetTag {
+  color: #888888;
+}
+
+.TweetStats td {
+  padding: 5px 40px 20px 40px;
+}
+
+.TweetLinkTable td {
+  border: 1px solid #E0E0EF;
+  border-collapse: collapse;
+  padding: 0px;
+}
+
+.TweetLinkTextCell {
+  vertical-align: top;
+}
+
+.TweetLinkText {
+  padding: 10px;
+  color: black;
+}
+
+.TweetLinkTitle {
+  color: black;
+}
+
+.TweetLinkSite {
+  color: gray;
+}
+
+.TweetLink a:link {
+  font-decorations: none;
+}
+
+.TweetLinkImage {
+  height: 190px;
+  width: 190px;
+}
